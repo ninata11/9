@@ -1,0 +1,23 @@
+body {
+  background-color: blue;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+.container h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+}
+.container div {
+  width: 200px;
+  height: 200px;
+  background-color: #ffff;
+  font-size: 30px;
+  border: 1px red solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
