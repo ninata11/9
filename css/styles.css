@@ -1,23 +1,76 @@
 body {
   background-color: blue;
 }
-.container {
+section {
   max-width: 1920px;
   width: 100%;
   margin: auto;
 }
-.container h1 {
+section h1 {
   color: black;
   font-size: 40px;
   font-weight: bold;
 }
 .container div {
-  width: 200px;
-  height: 200px;
   background-color: #ffff;
   font-size: 30px;
   border: 1px red solid;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(150px, auto);
+
+  grid-template-areas:
+    "lorem culpa oficia oficia"
+    "lorem molit molit fugiat"
+    "exercitation magna laboris fugiat"
+    "ullamco ullamco laboris consectetur "
+    "pariatur dolore dolore excepteur";
+}
+.lorem {
+  grid-area: lorem;
+}
+.culpa {
+  grid-area: culpa;
+}
+.oficia {
+  grid-area: oficia;
+}
+.molit {
+  grid-area: molit;
+}
+.fugiat {
+  grid-area: fugiat;
+}
+.exercitation {
+  grid-area: exercitation;
+}
+.magna {
+  grid-area: magna;
+}
+.laboris {
+  grid-area: laboris;
+}
+.fugiat {
+  grid-area: fugiat;
+}
+.ullamco {
+  grid-area: ullamco;
+}
+.consectetur {
+  grid-area: consectetur;
+}
+.pariatur {
+  grid-area: pariatur;
+}
+.dolore {
+  grid-area: dolore;
+}
+.excepteur {
+  grid-area: excepteur;
 }
